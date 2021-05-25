@@ -103,8 +103,7 @@ ul {
     background: #c1c1c1;
     padding: 16px;
     height: 100%;
-    overflow-y: auto;
-    transition: opacity .1s linear; }
+    overflow-y: auto; }
     .chat-window .chat-messages .message {
       background: rgba(255, 255, 255, 0.8);
       padding: 8px;
@@ -139,3 +138,11 @@ ul {
       display: none; }
     .chat-window .chat-messages {
       grid-column: 1 / -1; } }
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 0; }
+  .chat-window {
+    width: 100%;
+    height: 80%;
+    box-shadow: none; } }
