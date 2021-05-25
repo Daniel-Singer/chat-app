@@ -144,5 +144,9 @@ ul {
     padding: 0; }
   .chat-window {
     width: 100%;
+<<<<<<< HEAD
     height: 80%;
     box-shadow: none; } }
+=======
+    height: 100%; } }
+>>>>>>> 5e124c9da0d99fb177d38fd8280c770532c537c7
