@@ -25,3 +25,14 @@
     }
   }
 };
+
+
+@media screen and (max-width:768px){
+  body{
+    padding: $m-padding;
+  };
+  .enter-form{
+    max-width: 100%;
+    min-width: 80%;
+  };
+}

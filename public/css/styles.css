@@ -58,6 +58,13 @@ ul {
       transform: scale(1.02);
       filter: brightness(1.1); }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding: 16px; }
+  .enter-form {
+    max-width: 100%;
+    min-width: 80%; } }
+
 .chat-window {
   width: 30vw;
   height: 50vh;
@@ -96,7 +103,8 @@ ul {
     background: #c1c1c1;
     padding: 16px;
     height: 100%;
-    overflow-y: auto; }
+    overflow-y: auto;
+    transition: opacity .1s linear; }
     .chat-window .chat-messages .message {
       background: rgba(255, 255, 255, 0.8);
       padding: 8px;
@@ -121,3 +129,13 @@ ul {
       margin: 0 16px;
       background: #7b1fa2;
       color: #fff; }
+
+@media screen and (max-width: 768px) {
+  .chat-window {
+    min-height: 80vh;
+    min-width: 80%;
+    max-width: 100%; }
+    .chat-window__info {
+      display: none; }
+    .chat-window .chat-messages {
+      grid-column: 1 / -1; } }

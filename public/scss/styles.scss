@@ -2,3 +2,18 @@
 @import './base/base';
 @import './components/enter-form';
 @import './components/chat-window';
+
+
+@media screen and (max-width:768px) {
+  .chat-window{
+    min-height: 80vh;
+    min-width: 80%;
+    max-width: 100%;
+    &__info{
+      display: none;
+    };
+    .chat-messages{
+      grid-column: 1 / -1;
+    }
+  }
+}
