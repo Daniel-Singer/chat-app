@@ -2,6 +2,11 @@ const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
 const roomName = document.getElementById('room-name');
 const userList = document.getElementById('users');
+const exitChatButton = document.querySelector('.leave-chat');
+
+// chat verlassen
+
+exitChatButton.addEventListener('click', leaveChat)
 
 // Username und Chatroom von URL
 const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true });
@@ -58,3 +63,10 @@ function outputUsers(users) {
     ${users.map(user => `<li>${user.username}</li>`).join('')}
   `;
 };
+
+// Chat verlassen
+
+function leaveChat(e){
+  e.preventDefault();
+  window.location.href = '/';
+}

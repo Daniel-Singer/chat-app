@@ -1,0 +1,80 @@
+.chat-window{
+  width: 30vw;
+  height: 50vh;
+  min-width: 800px;
+  min-height: 350px;
+  box-shadow: $shadow;
+  border-radius: $m-radius;
+  overflow: hidden;
+  display: grid;
+  grid-template: max-content 1fr max-content / repeat(12,1fr);
+  &__header{
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $s-padding $m-padding;
+    background: $blue;
+    h2{
+      color: #fff;
+    };
+    button{
+      background: rgba(255, 255, 255, 0.482);
+    }
+  };
+  &__info{
+    grid-column: 1 / 4;
+    grid-row: 2;
+    height: 100%;
+    padding: $m-padding;
+    h3, h4{
+      margin-bottom: $s-margin;
+    };
+    h4{
+      padding-bottom: $m-padding;
+      border-bottom: 1px solid $light-grey;
+    };
+    ul{
+      li{
+        margin-bottom: $s-margin;
+      }
+    }
+  };
+  .chat-messages{
+    grid-column: 4 / -1;
+    background: $light-grey;
+    padding: $m-padding;
+    height: 100%;
+    overflow-y: auto;
+    .message{
+      background: rgba(255, 255, 255, 0.8);
+      padding: $s-padding;
+      border-radius: $m-radius;
+      margin-bottom: $m-margin;
+      p:first-child{
+        font-size: .8rem;
+        color: #1e88e5;
+        margin-bottom: $s-margin;
+      };
+      p:nth-child(2){
+        color: black;
+      }
+    }
+  }
+  #chat-form{
+    grid-row: 3;
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    background: rgb(225, 225, 225);
+    input{
+      width: 100%;
+      margin-right: 0;
+    };
+    button{
+      margin:0 $m-margin;
+      background: $purple;
+      color: #fff;
+    }
+  }
+};

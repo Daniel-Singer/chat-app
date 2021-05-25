@@ -1,0 +1,27 @@
+.enter-form{
+  display: flex;
+  flex-direction: column;
+  box-shadow: $shadow;
+  border-radius: $m-radius;
+  width: 20vw;
+  min-width: 500px;
+  overflow: hidden;
+  &__heading{
+    background: $blue;
+    padding: $m-padding;
+    h2{
+      color: white;
+      text-transform: uppercase;
+    };
+  };
+  button{
+    margin: $m-margin;
+    background: $purple;
+    color: #fff;
+    transition: transform .1s linear;
+    &:hover{
+      transform: scale(1.02);
+      filter: brightness(1.1);
+    }
+  }
+};

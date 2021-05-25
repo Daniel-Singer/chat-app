@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/Roboto/Roboto-Regular.ttf');
+};
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+};
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto'
+};
+
+input, select{
+  height: 42px;
+  padding: $s-padding;
+  font-size: $m-font;
+  border-radius: $m-radius;
+  margin: $m-margin;
+  border: 1px solid $light-grey;
+};
+
+button{
+  height: 42px;
+  border: none;
+  border-radius: $m-radius;
+  font-size: $m-font;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 $m-padding;
+};
+
+ul{
+  list-style: none;
+}
+
