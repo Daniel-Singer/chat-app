@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+input, select {
+  height: 42px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin: 16px;
+  border: 1px solid #c7c7c7; }
+
+button {
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 16px; }
+
+ul {
+  list-style: none; }
+
+.enter-form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 20vw;
+  min-width: 500px;
+  overflow: hidden; }
+  .enter-form__heading {
+    background: #1e88e5;
+    padding: 16px; }
+    .enter-form__heading h2 {
+      color: white;
+      text-transform: uppercase; }
+  .enter-form button {
+    margin: 16px;
+    background: #7b1fa2;
+    color: #fff;
+    transition: transform .1s linear; }
+    .enter-form button:hover {
+      transform: scale(1.02);
+      filter: brightness(1.1); }
+
+.chat-window {
+  width: 30vw;
+  height: 50vh;
+  min-width: 800px;
+  min-height: 350px;
+  box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  display: grid;
+  grid-template: max-content 1fr max-content/repeat(12, 1fr); }
+  .chat-window__header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: #1e88e5; }
+    .chat-window__header h2 {
+      color: #fff; }
+  .chat-window__info {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    height: 100%;
+    padding: 16px; }
+    .chat-window__info h3, .chat-window__info h4 {
+      margin-bottom: 8px; }
+  .chat-window .chat-messages {
+    grid-column: 4 / -1;
+    background: #c7c7c7;
+    padding: 16px;
+    height: 100%; }
+    .chat-window .chat-messages .message {
+      background: #fff;
+      padding: 8px;
+      border-radius: 4px;
+      margin-bottom: 16px; }
+      .chat-window .chat-messages .message p:first-child {
+        font-size: .8rem;
+        color: #1e88e5;
+        margin-bottom: 8px; }
+  .chat-window #chat-form {
+    grid-row: 3;
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center; }
+    .chat-window #chat-form input {
+      width: 100%;
+      margin-right: 0; }
+    .chat-window #chat-form button {
+      margin-right: 16px; }

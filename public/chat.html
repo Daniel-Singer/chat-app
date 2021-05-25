@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="chat-window">
+    <div class="chat-window__header">
+      <h2>Chat Box</h2>
+      <button class="leave-chat">Chat verlassen</button>
+    </div>
+    <div class="chat-window__info">
+      <h3>Chatroom</h3>
+      <h4 id="room-name"></h4>
+      <h3>Users</h3>
+      <ul id="users"></ul>
+    </div>
+    <div class="chat-messages"></div>
+    <form action="" id="chat-form">
+      <input type="text" name="message" id="message" placeholder="Deine Nachricht...">
+      <button type="submit">Senden</button>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+    integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
